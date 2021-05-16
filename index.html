@@ -4,53 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio Erick</title>
-  <style>
-    body {
-      background-color: #EFFFFA;
-    }
-
-    #meu-nome {
-      font-family: fantasy;
-    }
-
-    #descricao-foto {
-      font-family: serif;
-    }
-
-    i {
-      color: purple;
-      text-decoration: underline dotted purple;
-    }
-
-    b {
-      color: red;
-      text-decoration: underline wavy red;
-    }
-
-    .desenhar {
-      font-size: 1.25em;
-    }
-
-    .cozinhar {
-      font-size: 1.125em;
-    }
-
-    .tirar-foto {
-      font-size: 0.875em;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <h1 id="meu-nome">Erick Oliveira dos Santos</h1>
-  <img id="foto-erick" src="erick.jpeg" alt="Eu com uma camiseta preta e um colete preto">
-  <p id="descricao-foto">Na imagem estou com uma camiseta preta e um colete preto</p>
-  <p id="descricao-minha">Meu nome é <b>Erick</b>, tenho <i>20 anos</i>, <b>osasquence</b> e atualmente morando em <b>Carapicuíba-SP</b>. Amo tecnologia, <i>educação</i>, livros e séries.</p>
+  <div class="nome">
+    <h1 id="meu-nome">Erick Oliveira dos Santos</h1>
+  </div>
+  <div class="infos-principais">
+    <div class="foto">
+      <img id="foto-erick" src="erick.jpeg" alt="Eu com uma camiseta preta e um colete preto">
+    </div>
+    <div class="descricao">
+      <p id="descricao-minha">Meu nome é <b>Erick</b>, tenho <i>20 anos</i>, <b>osasquence</b> e atualmente morando em <b>Carapicuíba-SP</b>. Amo tecnologia, <i>educação</i>, livros e séries.</p>
+    </div>
+  </div>
   <p id="minhas-habilidades">Habilidades que possuo:</p>
-  <ul>
-    <b>
+  <ul class="habilidades">
       <li class="desenhar">Desenhar</li>
-    </b>
     <li class="cozinhar">Cozinhar</li>
     <li class="tirar-foto">Tirar foto</li>
   </ul>
