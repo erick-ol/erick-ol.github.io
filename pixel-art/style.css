@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap') ;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  font-family: VT323 , sans-serif;
+  margin-top: 30px;
+}
+
+#color-palette {
+  display: table;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+}
+
+.color:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.table-div {
+  display: table;
+  margin: 0 auto 60px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#pixel-board {
+  border-collapse: collapse;
+}
+
+.pixel {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#buttons {
+  display: table;
+  margin: 0 auto 30px;
+}
+
+#clear-board , #save-board{
+  color: transparent;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  pointer-events: all;
+  cursor: pointer;
+}
+
+#clear-board {
+  background: url('./img/002-eraser.svg') no-repeat center white;
+  background-size: 20px;
+}
+
+#save-board {
+  background: url('./img/001-floppy-disk.svg') no-repeat center white;
+  background-size: 20px;
+}
+
+#board-buttons {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin: 0 30px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+#board-size {
+  width: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+#board-size:focus {
+  outline: none;
+}
+
+#generate-board {
+  background-color: transparent;
+  border: none;
+  padding-left: 15px;
+  border-left: 1px solid black;
+  cursor: pointer;
+}
+
+footer p {
+  text-align: center;
+}
+
+canvas {
+  display: none;
+}
